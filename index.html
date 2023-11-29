@@ -94,7 +94,7 @@
                 <div class="Xbar2"></div>`;
 
                 gameArray[i-1] = 1;
-
+                playCount++;
                 state++;
                 document.querySelector('.tab2').onclick = "sleep()"
             }
@@ -121,6 +121,7 @@
                 <div class="Xbar2"></div>`;
 
                 gameArray[i-1] = 1;
+                playCount++;
 
                 state++;
                 document.querySelector('.tab3').onclick = "sleep()"
@@ -148,7 +149,7 @@
                 <div class="Xbar2"></div>`;
 
                 gameArray[i-1] = 1;
-
+                playCount++;
                 state++;
                 document.querySelector('.tab4').onclick = "sleep()"
             }
@@ -175,7 +176,7 @@
                 <div class="Xbar2"></div>`;
 
                 gameArray[i-1] = 1;
-
+                playCount++;
                 state++;
                 document.querySelector('.tab5').onclick = "sleep()"
             }
@@ -202,7 +203,7 @@
                 <div class="Xbar2"></div>`;
 
                 gameArray[i-1] = 1;
-
+                playCount++;
                 state++;
                 document.querySelector('.tab6').onclick = "sleep()"
             }
@@ -229,7 +230,7 @@
                 <div class="Xbar2"></div>`;
 
                 gameArray[i-1] = 1;
-
+                playCount++;
                 state++;
                 document.querySelector('.tab7').onclick = "sleep()"
             }
@@ -256,7 +257,7 @@
                 <div class="Xbar2"></div>`;
 
                 gameArray[i-1] = 1;
-
+                playCount++;
                 state++;
                 document.querySelector('.tab8').onclick = "sleep()"
             }
@@ -283,7 +284,7 @@
                 <div class="Xbar2"></div>`;
 
                 gameArray[i-1] = 1;
-
+                playCount++;
                 state++;
                 document.querySelector('.tab9').onclick = "sleep()"
             }
@@ -314,37 +315,37 @@
             //firstrow
             if (gameArray[0] == gameArray[1] && gameArray[0] == gameArray[2] &&
                 gameArray[0] == 1 ){
-                document.querySelector('.result').innerHTML = "X wins by the first row"
+                document.querySelector('.result').innerHTML = `X wins by the first row <button onclick="reload()"> Refresh </button>`
                 document.querySelector('.result').style.display = "flex";
             }
                 //firstrow
                 else if (gameArray[0] == gameArray[1] && gameArray[0] == gameArray[2] &&
                     gameArray[0] == 2 ){
-                    document.querySelector('.result').innerHTML = "O wins by the first row"
+                    document.querySelector('.result').innerHTML = `O wins by the first row <button onclick="reload()"> Refresh </button>`
                     document.querySelector('.result').style.display = "flex";
                 }
 
             //second row
            else if (gameArray[3] == gameArray[4] && gameArray[3] == gameArray[5] &&
                 gameArray[3] == 1 ){
-                document.querySelector('.result').innerHTML = "X wins by the second row"
+                document.querySelector('.result').innerHTML = `X wins by the second row <button onclick="reload()"> Refresh </button>`
                 document.querySelector('.result').style.display = "flex";
             }
                 else if (gameArray[3] == gameArray[4] && gameArray[3] == gameArray[5] &&
                     gameArray[3] == 2 ){
-                    document.querySelector('.result').innerHTML = "O wins by the second row"
+                    document.querySelector('.result').innerHTML = `O wins by the second row <button onclick="reload()"> Refresh </button>`
                     document.querySelector('.result').style.display = "flex";
                 }
 
             //third row
            else if (gameArray[6] === gameArray[7] && gameArray[6] === gameArray[8] &&
                 gameArray[6] == 1 ){
-                document.querySelector('.result').innerHTML = "X wins by the third row"
+                document.querySelector('.result').innerHTML = `X wins by the third row <button onclick="reload()"> Refresh </button>`
                 document.querySelector('.result').style.display = "flex";
             }
                 else if (gameArray[6] === gameArray[7] && gameArray[6] === gameArray[8] &&
                     gameArray[6] == 2 ){
-                    document.querySelector('.result').innerHTML = "O wins by the third row"
+                    document.querySelector('.result').innerHTML = `O wins by the third row <button onclick="reload()"> Refresh </button>`
                     document.querySelector('.result').style.display = "flex";
                 }
             
@@ -352,39 +353,39 @@
             //first column
            else if (gameArray[0] == gameArray[3] && gameArray[0] == gameArray[6] &&
                 gameArray[0] == 1 ){
-                document.querySelector('.result').innerHTML = "X wins by the first column"
+                document.querySelector('.result').innerHTML =  `X wins by the first column <button onclick="reload()"> Refresh </button>`
                 document.querySelector('.result').style.display = "flex";
             }
                 //first column
                 else if (gameArray[0] == gameArray[3] && gameArray[0] == gameArray[6] &&
                     gameArray[0] == 2 ){
-                    document.querySelector('.result').innerHTML = "O wins by the first column"
+                    document.querySelector('.result').innerHTML = `O wins by the first column <button onclick="reload()"> Refresh </button>`
                     document.querySelector('.result').style.display = "flex";
                 }
 
             //second column
             else if (gameArray[1] == gameArray[4] && gameArray[1] == gameArray[7] &&
                 gameArray[1] == 1 ){
-                document.querySelector('.result').innerHTML = "X wins by the second column"
+                document.querySelector('.result').innerHTML = `X wins by the second column <button onclick="reload()"> Refresh </button>`
                 document.querySelector('.result').style.display = "flex";
             }
                 //second column
                 else if (gameArray[1] == gameArray[4] && gameArray[1] == gameArray[7] &&
                     gameArray[1] == 2 ){
-                    document.querySelector('.result').innerHTML = "O wins by the second column"
+                    document.querySelector('.result').innerHTML = `O wins by the second column <button onclick="reload()"> Refresh </button>`
                     document.querySelector('.result').style.display = "flex";
                 }
 
             //third column
             else if (gameArray[2] == gameArray[5] && gameArray[2] == gameArray[8] &&
                 gameArray[2] == 1 ){
-                document.querySelector('.result').innerHTML = "X wins by the third column"
+                document.querySelector('.result').innerHTML =  `X wins by the third column <button onclick="reload()"> Refresh </button>`
                 document.querySelector('.result').style.display = "flex";
             }
                 //third column
                 else if (gameArray[2] == gameArray[5] && gameArray[2] == gameArray[8] &&
                     gameArray[2] == 2 ){
-                    document.querySelector('.result').innerHTML = "O wins by the third column"
+                    document.querySelector('.result').innerHTML = `O wins by the third column <button onclick="reload()"> Refresh </button>`
                     document.querySelector('.result').style.display = "flex";
                 }
 
@@ -392,37 +393,42 @@
             // \ diagonal
             else if (gameArray[0] == gameArray[4] && gameArray[0] == gameArray[8] &&
                 gameArray[0] == 1 ){
-                document.querySelector('.result').innerHTML = "X wins through the downhill diagonal"
+                document.querySelector('.result').innerHTML = `X wins through the downhill diagonal <button onclick="reload()"> Refresh </button>`
                 document.querySelector('.result').style.display = "flex";
             }
                 // \ diagonal
                 else if (gameArray[0] == gameArray[4] && gameArray[0] == gameArray[8] &&
                     gameArray[0] == 2 ){
-                    document.querySelector('.result').innerHTML = "O wins through the downhill diagonal"
+                    document.querySelector('.result').innerHTML = `O wins through the downhill diagonal <button onclick="reload()"> Refresh </button>`
                     document.querySelector('.result').style.display = "flex";
                 }
 
             // / diagonal    
             else if (gameArray[2] == gameArray[4] && gameArray[2] == gameArray[6] &&
                 gameArray[2] == 1 ){
-                document.querySelector('.result').innerHTML = "X wins through the uphill diagonal"
+                document.querySelector('.result').innerHTML = `X wins through the uphill diagonal <button onclick="reload()"> Refresh </button>`
                 document.querySelector('.result').style.display = "flex";
             }
                 // / diagonal
                 else if (gameArray[2] == gameArray[4] && gameArray[2] == gameArray[6] &&
                     gameArray[2] == 2 ){
-                    document.querySelector('.result').innerHTML = "O wins through the uphill diagonal"
+                    document.querySelector('.result').innerHTML = `O wins through the uphill diagonal <button onclick="reload()"> Refresh </button>`
                     document.querySelector('.result').style.display = "flex";
                 }
             else if (playCount == 9) {
-                    document.querySelector('.result').innerHTML = "It's a Draw!"
+                    document.querySelector('.result').innerHTML = `Draw<button onclick="reload()"> Refresh </button>`
                     document.querySelector('.result').style.display = "flex";
+                    console.log("it runs")
             }
         }
 
 
         sleep = () => {
             console.log("next guy's turn")
+        }
+
+        reload= () => {
+            document.location.reload(true)
         }
     </script>
 </body>

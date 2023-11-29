@@ -137,6 +137,17 @@ body{
 .result p{
     font-size: 6vw;
 }
+.result button{
+    font-weight: 400;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    scale: 1.2;
+    width: 100px;
+    height: 20px;
+    box-shadow: 0 0 5px white;
+}
  @media (max-width:740px ) {
     body{
         width: 100vw;
