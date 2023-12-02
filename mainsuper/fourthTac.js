@@ -255,6 +255,8 @@
      fourthcheckWin();
  }
 
+
+ fourthTacdone= false;
  fourthcheckWin = () => {
      //checking win condition //we can also run a loop on the horizontal,
      // vertical or diagonal to run 3(2 for diagonal) times and add 1 to the indexes each time
@@ -265,12 +267,14 @@
      if (fourthgameArray[0] == fourthgameArray[1] && fourthgameArray[0] == fourthgameArray[2] &&
          fourthgameArray[0] == 1 ){
          document.querySelector('.fourthTacresult').innerHTML = `X wins by the first row `
+         fourthTacdone = true;
          // document.querySelector('.fourthTacresult').style.display = "flex"; <button onclick="reload()"> Refresh </button>
      }
          //firstrow
          else if (fourthgameArray[0] == fourthgameArray[1] && fourthgameArray[0] == fourthgameArray[2] &&
              fourthgameArray[0] == 2 ){
              document.querySelector('.fourthTacresult').innerHTML = `O wins by the first row `
+             fourthTacdone = true;
              // document.querySelector('.fourthTacresult').style.display = "flex";
          }
 
@@ -278,11 +282,13 @@
     else if (fourthgameArray[3] == fourthgameArray[4] && fourthgameArray[3] == fourthgameArray[5] &&
          fourthgameArray[3] == 1 ){
          document.querySelector('.fourthTacresult').innerHTML = `X wins by the fourth row `
+         fourthTacdone = true;
          // document.querySelector('.fourthTacresult').style.display = "flex";
      }
          else if (fourthgameArray[3] == fourthgameArray[4] && fourthgameArray[3] == fourthgameArray[5] &&
              fourthgameArray[3] == 2 ){
              document.querySelector('.fourthTacresult').innerHTML = `O wins by the fourth row `
+             fourthTacdone = true;
              // document.querySelector('.fourthTacresult').style.display = "flex";
          }
 
@@ -290,11 +296,13 @@
     else if (fourthgameArray[6] === fourthgameArray[7] && fourthgameArray[6] === fourthgameArray[8] &&
          fourthgameArray[6] == 1 ){
          document.querySelector('.fourthTacresult').innerHTML = `X wins by the fourth row `
+         fourthTacdone = true;
          // document.querySelector('.fourthTacresult').style.display = "flex";
      }
          else if (fourthgameArray[6] === fourthgameArray[7] && fourthgameArray[6] === fourthgameArray[8] &&
              fourthgameArray[6] == 2 ){
              document.querySelector('.fourthTacresult').innerHTML = `O wins by the fourth row `
+             fourthTacdone = true;
              // document.querySelector('.fourthTacresult').style.display = "flex";
          }
      
@@ -303,12 +311,14 @@
     else if (fourthgameArray[0] == fourthgameArray[3] && fourthgameArray[0] == fourthgameArray[6] &&
          fourthgameArray[0] == 1 ){
          document.querySelector('.fourthTacresult').innerHTML =  `X wins by the first column `
+         fourthTacdone = true;
          // document.querySelector('.fourthTacresult').style.display = "flex";
      }
          //first column
          else if (fourthgameArray[0] == fourthgameArray[3] && fourthgameArray[0] == fourthgameArray[6] &&
              fourthgameArray[0] == 2 ){
              document.querySelector('.fourthTacresult').innerHTML = `O wins by the first column `
+             fourthTacdone = true;
              // document.querySelector('.fourthTacresult').style.display = "flex";
          }
 
@@ -316,12 +326,14 @@
      else if (fourthgameArray[1] == fourthgameArray[4] && fourthgameArray[1] == fourthgameArray[7] &&
          fourthgameArray[1] == 1 ){
          document.querySelector('.fourthTacresult').innerHTML = `X wins by the fourth column `
+         fourthTacdone = true;
          // document.querySelector('.fourthTacresult').style.display = "flex";
      }
          //fourth column
          else if (fourthgameArray[1] == fourthgameArray[4] && fourthgameArray[1] == fourthgameArray[7] &&
              fourthgameArray[1] == 2 ){
              document.querySelector('.fourthTacresult').innerHTML = `O wins by the fourth column `
+             fourthTacdone = true;
              // document.querySelector('.fourthTacresult').style.display = "flex";
          }
 
@@ -329,12 +341,14 @@
      else if (fourthgameArray[2] == fourthgameArray[5] && fourthgameArray[2] == fourthgameArray[8] &&
          fourthgameArray[2] == 1 ){
          document.querySelector('.fourthTacresult').innerHTML =  `X wins by the fourth column `
+         fourthTacdone = true;
          // document.querySelector('.fourthTacresult').style.display = "flex";
      }
          //fourth column
          else if (fourthgameArray[2] == fourthgameArray[5] && fourthgameArray[2] == fourthgameArray[8] &&
              fourthgameArray[2] == 2 ){
              document.querySelector('.fourthTacresult').innerHTML = `O wins by the fourth column `
+             fourthTacdone = true;
              // document.querySelector('.fourthTacresult').style.display = "flex";
          }
 
@@ -343,12 +357,14 @@
      else if (fourthgameArray[0] == fourthgameArray[4] && fourthgameArray[0] == fourthgameArray[8] &&
          fourthgameArray[0] == 1 ){
          document.querySelector('.fourthTacresult').innerHTML = `X wins through the downhill diagonal `
+         fourthTacdone = true;
          // document.querySelector('.fourthTacresult').style.display = "flex";
      }
          // \ diagonal
          else if (fourthgameArray[0] == fourthgameArray[4] && fourthgameArray[0] == fourthgameArray[8] &&
              fourthgameArray[0] == 2 ){
              document.querySelector('.fourthTacresult').innerHTML = `O wins through the downhill diagonal `
+             fourthTacdone = true;
              // document.querySelector('.fourthTacresult').style.display = "flex";
          }
 
@@ -356,16 +372,19 @@
      else if (fourthgameArray[2] == fourthgameArray[4] && fourthgameArray[2] == fourthgameArray[6] &&
          fourthgameArray[2] == 1 ){
          document.querySelector('.fourthTacresult').innerHTML = `X wins through the uphill diagonal `
+         fourthTacdone = true;
          // document.querySelector('.fourthTacresult').style.display = "flex";
      }
          // / diagonal
          else if (fourthgameArray[2] == fourthgameArray[4] && fourthgameArray[2] == fourthgameArray[6] &&
              fourthgameArray[2] == 2 ){
              document.querySelector('.fourthTacresult').innerHTML = `O wins through the uphill diagonal `
+             fourthTacdone = true;
              // document.querySelector('.fourthTacresult').style.display = "flex";
          }
      else if (fourthplayCount == 9) {
              document.querySelector('.fourthTacresult').innerHTML = `Draw`
+             fourthTacdone = true;
              // document.querySelector('.fourthTacresult').style.display = "flex";
              console.log("it runs")
      }

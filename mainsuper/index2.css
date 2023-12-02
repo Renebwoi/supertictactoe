@@ -99,3 +99,10 @@
     height: 35px;
     background-color: chartreuse;
 }
+
+.Tac-indicator{
+    width: 200px;
+    height: 25px;
+    position: absolute;
+    bottom: 0px;
+}
