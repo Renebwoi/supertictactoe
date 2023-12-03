@@ -93,7 +93,7 @@
 .result{
     position: absolute;
     top: 0px;
-    z-index: 100;
+    z-index: 6;
 
     width: 400px;
     height: 35px;
@@ -149,4 +149,32 @@
     align-items: center;
     justify-content: center;
     font-size: 10rem;/* the edit for the draw text, might get messy when i start responsiveness*/
+}
+
+.GameEnd{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+
+    background-color: black;
+    color: white;
+
+    /* display: flex; */
+    display: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 10;/* fix the  z-index with the green result display */
+    top: 0px;
+}
+.ReloadGame{
+    width: 15%;
+    height: 2.5%;
+    margin-top: 25px;
+    border-radius: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

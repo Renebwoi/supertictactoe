@@ -319,8 +319,17 @@
     </div>
     <div class="Tac-indicator">This is Tac9</div>
 </div>
+<div class="GameEnd">
+    <h1>Game Over</h1>
+    <p class="GameEndInfo"></p>
+    <button title="reload the game" type="button" onclick="reload()" class="ReloadGame"> 
+        Reload Game
+    </button>
+</div>
 <script>
-    let finalGameArray = [,,,,,,,,,]
+    let finalGameArray = [,,,,,,,,,];
+    let GameEndDiv = document.querySelector('.GameEnd');
+    let GameEndInfo = document.querySelector('.GameEndInfo');
 </script>
     <script src="firstTac.js"></script>
     <script src="secondTac.js"></script>
@@ -333,6 +342,6 @@
     <script src="ninthTac.js"></script>
     <script src="containerselect.js"></script>
     <script src="Tacblocker.js"></script>
-    <!-- <script src="finalGameCheck.js"></script> -->
+    <script src="finalGameCheck.js"></script>
 </body>
 </html>
