@@ -20,3 +20,5 @@ fetch ('test2.html') // make a GET request to the HTML file
   });
 
 }
+
+document.getElementById('content').click();
