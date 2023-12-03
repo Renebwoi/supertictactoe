@@ -250,7 +250,7 @@
      }}
      //ninth box end
 
-     console.log(fifthgameArray)
+    //  console.log(fifthgameArray)
 
      fifthcheckWin();
  }
@@ -268,6 +268,7 @@
          fifthgameArray[0] == 1 ){
          document.querySelector('.fifthTacresult').innerHTML = `X wins by the first row `
          fifthTacdone = true;
+         TacBlock(5, 1);
          // document.querySelector('.fifthTacresult').style.display = "flex"; <button onclick="reload()"> Refresh </button>
      }
          //firstrow
@@ -275,6 +276,7 @@
              fifthgameArray[0] == 2 ){
              document.querySelector('.fifthTacresult').innerHTML = `O wins by the first row `
              fifthTacdone = true;
+             TacBlock(5, 0);
              // document.querySelector('.fifthTacresult').style.display = "flex";
          }
 
@@ -283,12 +285,14 @@
          fifthgameArray[3] == 1 ){
          document.querySelector('.fifthTacresult').innerHTML = `X wins by the fifth row `
          fifthTacdone = true;
+         TacBlock(5, 1);
          // document.querySelector('.fifthTacresult').style.display = "flex";
      }
          else if (fifthgameArray[3] == fifthgameArray[4] && fifthgameArray[3] == fifthgameArray[5] &&
              fifthgameArray[3] == 2 ){
              document.querySelector('.fifthTacresult').innerHTML = `O wins by the fifth row `
              fifthTacdone = true;
+             TacBlock(5, 0);
              // document.querySelector('.fifthTacresult').style.display = "flex";
          }
 
@@ -297,12 +301,14 @@
          fifthgameArray[6] == 1 ){
          document.querySelector('.fifthTacresult').innerHTML = `X wins by the fifth row `
          fifthTacdone = true;
+         TacBlock(5, 1);
          // document.querySelector('.fifthTacresult').style.display = "flex";
      }
          else if (fifthgameArray[6] === fifthgameArray[7] && fifthgameArray[6] === fifthgameArray[8] &&
              fifthgameArray[6] == 2 ){
              document.querySelector('.fifthTacresult').innerHTML = `O wins by the fifth row `
              fifthTacdone = true;
+             TacBlock(5, 0);
              // document.querySelector('.fifthTacresult').style.display = "flex";
          }
      
@@ -312,6 +318,7 @@
          fifthgameArray[0] == 1 ){
          document.querySelector('.fifthTacresult').innerHTML =  `X wins by the first column `
          fifthTacdone = true;
+         TacBlock(5, 1);
          // document.querySelector('.fifthTacresult').style.display = "flex";
      }
          //first column
@@ -319,6 +326,7 @@
              fifthgameArray[0] == 2 ){
              document.querySelector('.fifthTacresult').innerHTML = `O wins by the first column `
              fifthTacdone = true;
+             TacBlock(5, 0);
              // document.querySelector('.fifthTacresult').style.display = "flex";
          }
 
@@ -327,6 +335,7 @@
          fifthgameArray[1] == 1 ){
          document.querySelector('.fifthTacresult').innerHTML = `X wins by the fifth column `
          fifthTacdone = true;
+         TacBlock(5, 1);
          // document.querySelector('.fifthTacresult').style.display = "flex";
      }
          //fifth column
@@ -334,6 +343,7 @@
              fifthgameArray[1] == 2 ){
              document.querySelector('.fifthTacresult').innerHTML = `O wins by the fifth column `
              fifthTacdone = true;
+             TacBlock(5, 0);
              // document.querySelector('.fifthTacresult').style.display = "flex";
          }
 
@@ -342,6 +352,7 @@
          fifthgameArray[2] == 1 ){
          document.querySelector('.fifthTacresult').innerHTML =  `X wins by the fifth column `
          fifthTacdone = true;
+         TacBlock(5, 1);
          // document.querySelector('.fifthTacresult').style.display = "flex";
      }
          //fifth column
@@ -349,6 +360,7 @@
              fifthgameArray[2] == 2 ){
              document.querySelector('.fifthTacresult').innerHTML = `O wins by the fifth column `
              fifthTacdone = true;
+             TacBlock(5, 0);
              // document.querySelector('.fifthTacresult').style.display = "flex";
          }
 
@@ -358,6 +370,7 @@
          fifthgameArray[0] == 1 ){
          document.querySelector('.fifthTacresult').innerHTML = `X wins through the downhill diagonal `
          fifthTacdone = true;
+         TacBlock(5, 1);
          // document.querySelector('.fifthTacresult').style.display = "flex";
      }
          // \ diagonal
@@ -365,6 +378,7 @@
              fifthgameArray[0] == 2 ){
              document.querySelector('.fifthTacresult').innerHTML = `O wins through the downhill diagonal `
              fifthTacdone = true;
+             TacBlock(5, 0);
              // document.querySelector('.fifthTacresult').style.display = "flex";
          }
 
@@ -373,6 +387,7 @@
          fifthgameArray[2] == 1 ){
          document.querySelector('.fifthTacresult').innerHTML = `X wins through the uphill diagonal `
          fifthTacdone = true;
+         TacBlock(5, 1);
          // document.querySelector('.fifthTacresult').style.display = "flex";
      }
          // / diagonal
@@ -380,11 +395,13 @@
              fifthgameArray[2] == 2 ){
              document.querySelector('.fifthTacresult').innerHTML = `O wins through the uphill diagonal `
              fifthTacdone = true;
+             TacBlock(5, 0);
              // document.querySelector('.fifthTacresult').style.display = "flex";
          }
      else if (fifthplayCount == 9) {
              document.querySelector('.fifthTacresult').innerHTML = `Draw`
              fifthTacdone = true;
+             TacBlock(5, 2);
              // document.querySelector('.fifthTacresult').style.display = "flex";
              console.log("it runs")
      }

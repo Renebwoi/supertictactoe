@@ -106,3 +106,47 @@
     position: absolute;
     bottom: 0px;
 }
+.Tac-blocker{
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    background-color: yellow;
+    z-index: 0;/*2 for display*/
+    overflow: hidden;
+}
+.Tac-blocker-X{
+    width: 800px;
+    height: 500px;
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    background-color: black;
+}
+.Tac-blocker-O{
+    width: 800px;
+    height: 500px;
+    clip-path: circle(29.3% at 50% 50%);
+    background-color: black;
+    /* design its inner later */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Tac-blocker-O-inner{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: yellow;
+}
+
+.Tac-blocker-Draw{
+    width: 800px;
+    height: 500px;
+    background-color: black;
+    clip-path: polygon(9% 35%, 90% 35%, 90% 65%, 9% 65%);
+
+    
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 10rem;/* the edit for the draw text, might get messy when i start responsiveness*/
+}

@@ -250,7 +250,7 @@
      }}
      //ninth box end
 
-     console.log(eightgameArray)
+    //  console.log(eightgameArray)
 
      eightcheckWin();
  }
@@ -267,6 +267,7 @@ eightTacdone = false;
          eightgameArray[0] == 1 ){
          document.querySelector('.eightTacresult').innerHTML = `X wins by the first row `
          eightTacdone = true;
+         TacBlock(8, 1);
          // document.querySelector('.eightTacresult').style.display = "flex"; <button onclick="reload()"> Refresh </button>
      }
          //firstrow
@@ -274,6 +275,7 @@ eightTacdone = false;
              eightgameArray[0] == 2 ){
              document.querySelector('.eightTacresult').innerHTML = `O wins by the first row `
              eightTacdone = true;
+             TacBlock(8, 0);
              // document.querySelector('.eightTacresult').style.display = "flex";
          }
 
@@ -282,12 +284,14 @@ eightTacdone = false;
          eightgameArray[3] == 1 ){
          document.querySelector('.eightTacresult').innerHTML = `X wins by the eight row `
          eightTacdone = true;
+         TacBlock(8, 1);
          // document.querySelector('.eightTacresult').style.display = "flex";
      }
          else if (eightgameArray[3] == eightgameArray[4] && eightgameArray[3] == eightgameArray[5] &&
              eightgameArray[3] == 2 ){
              document.querySelector('.eightTacresult').innerHTML = `O wins by the eight row `
              eightTacdone = true;
+             TacBlock(8, 0);
              // document.querySelector('.eightTacresult').style.display = "flex";
          }
 
@@ -296,12 +300,14 @@ eightTacdone = false;
          eightgameArray[6] == 1 ){
          document.querySelector('.eightTacresult').innerHTML = `X wins by the eight row `
          eightTacdone = true;
+         TacBlock(8, 1);
          // document.querySelector('.eightTacresult').style.display = "flex";
      }
          else if (eightgameArray[6] === eightgameArray[7] && eightgameArray[6] === eightgameArray[8] &&
              eightgameArray[6] == 2 ){
              document.querySelector('.eightTacresult').innerHTML = `O wins by the eight row `
              eightTacdone = true;
+             TacBlock(8, 0);
              // document.querySelector('.eightTacresult').style.display = "flex";
          }
      
@@ -311,6 +317,7 @@ eightTacdone = false;
          eightgameArray[0] == 1 ){
          document.querySelector('.eightTacresult').innerHTML =  `X wins by the first column `
          eightTacdone = true;
+         TacBlock(8, 1);
          // document.querySelector('.eightTacresult').style.display = "flex";
      }
          //first column
@@ -318,6 +325,7 @@ eightTacdone = false;
              eightgameArray[0] == 2 ){
              document.querySelector('.eightTacresult').innerHTML = `O wins by the first column `
              eightTacdone = true;
+             TacBlock(8, 0);
              // document.querySelector('.eightTacresult').style.display = "flex";
          }
 
@@ -326,6 +334,7 @@ eightTacdone = false;
          eightgameArray[1] == 1 ){
          document.querySelector('.eightTacresult').innerHTML = `X wins by the eight column `
          eightTacdone = true;
+         TacBlock(8, 1);
          // document.querySelector('.eightTacresult').style.display = "flex";
      }
          //eight column
@@ -333,6 +342,7 @@ eightTacdone = false;
              eightgameArray[1] == 2 ){
              document.querySelector('.eightTacresult').innerHTML = `O wins by the eight column `
              eightTacdone = true;
+             TacBlock(8, 0);
              // document.querySelector('.eightTacresult').style.display = "flex";
          }
 
@@ -341,6 +351,7 @@ eightTacdone = false;
          eightgameArray[2] == 1 ){
          document.querySelector('.eightTacresult').innerHTML =  `X wins by the eight column `
          eightTacdone = true;
+         TacBlock(8, 1);
          // document.querySelector('.eightTacresult').style.display = "flex";
      }
          //eight column
@@ -348,6 +359,7 @@ eightTacdone = false;
              eightgameArray[2] == 2 ){
              document.querySelector('.eightTacresult').innerHTML = `O wins by the eight column `
              eightTacdone = true;
+             TacBlock(8, 0);
              // document.querySelector('.eightTacresult').style.display = "flex";
          }
 
@@ -357,6 +369,7 @@ eightTacdone = false;
          eightgameArray[0] == 1 ){
          document.querySelector('.eightTacresult').innerHTML = `X wins through the downhill diagonal `
          eightTacdone = true;
+         TacBlock(8, 1);
          // document.querySelector('.eightTacresult').style.display = "flex";
      }
          // \ diagonal
@@ -364,6 +377,7 @@ eightTacdone = false;
              eightgameArray[0] == 2 ){
              document.querySelector('.eightTacresult').innerHTML = `O wins through the downhill diagonal `
              eightTacdone = true;
+             TacBlock(8, 0);
              // document.querySelector('.eightTacresult').style.display = "flex";
          }
 
@@ -372,6 +386,7 @@ eightTacdone = false;
          eightgameArray[2] == 1 ){
          document.querySelector('.eightTacresult').innerHTML = `X wins through the uphill diagonal `
          eightTacdone = true;
+         TacBlock(8, 1);
          // document.querySelector('.eightTacresult').style.display = "flex";
      }
          // / diagonal
@@ -379,11 +394,13 @@ eightTacdone = false;
              eightgameArray[2] == 2 ){
              document.querySelector('.eightTacresult').innerHTML = `O wins through the uphill diagonal `
              eightTacdone = true;
+             TacBlock(8, 0);
              // document.querySelector('.eightTacresult').style.display = "flex";
          }
      else if (eightplayCount == 9) {
              document.querySelector('.eightTacresult').innerHTML = `Draw`
              eightTacdone = true;
+             TacBlock(8, 2);
              // document.querySelector('.eightTacresult').style.display = "flex";
              console.log("it runs")
      }

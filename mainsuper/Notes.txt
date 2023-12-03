@@ -1,0 +1,28 @@
+# to program for the final game
+
+# make a general array with empty elements
+# finalGamearray= [,,,,,,,,,]
+
+# for each of the results, replace the index with the correct value
+# 0 O is for o winning example finalGamearray[0] = "O" for O winning the first Tac
+# 1 X is for X winning
+# 2 D is for draw
+
+# write the if chain for checking the result
+# research javascript DOM loader later
+
+Tac-blocker
+
+first I'll add the Tac blocker when a tac is won
+the tac blocker will be white and displays boldly who won, lost or draw
+
+create an absolute element that z-indexes blocks the tac when won
+set its z-index to lower default
+and displays anytime the result is triggered
+
+put it in a general function and just call it for all results
+
+To check for final game draw
+if the finalGamearray doesn't have any empty element or is all filled up, we conclude it as a draw
+
+this check should happen on every click

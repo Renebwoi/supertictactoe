@@ -251,7 +251,7 @@
             }}
             //ninth box end
 
-            console.log(gameArray)
+            // console.log(gameArray)
 
             checkWin();
         }
@@ -268,6 +268,7 @@
                 gameArray[0] == 1 ){
                 document.querySelector('.firstTacresult').innerHTML = `X wins by the first row `
                 firstTacdone = true;
+                TacBlock(1, 1);
                 // document.querySelector('.firstTacresult').style.display = "flex";
             }
                 //firstrow
@@ -275,6 +276,7 @@
                     gameArray[0] == 2 ){
                     document.querySelector('.firstTacresult').innerHTML = `O wins by the first row `
                     firstTacdone = true;
+                    TacBlock(1, 0);
                     // document.querySelector('.firstTacresult').style.display = "flex";
                 }
 
@@ -283,12 +285,14 @@
                 gameArray[3] == 1 ){
                 document.querySelector('.firstTacresult').innerHTML = `X wins by the second row `
                 firstTacdone = true;
+                TacBlock(1, 1);
                 // document.querySelector('.firstTacresult').style.display = "flex";
             }
                 else if (gameArray[3] == gameArray[4] && gameArray[3] == gameArray[5] &&
                     gameArray[3] == 2 ){
                     document.querySelector('.firstTacresult').innerHTML = `O wins by the second row `
                     firstTacdone = true;
+                    TacBlock(1, 0);
                     // document.querySelector('.firstTacresult').style.display = "flex";
                 }
 
@@ -297,12 +301,14 @@
                 gameArray[6] == 1 ){
                 document.querySelector('.firstTacresult').innerHTML = `X wins by the third row `
                 firstTacdone = true;
+                TacBlock(1, 1);
                 // document.querySelector('.firstTacresult').style.display = "flex";
             }
                 else if (gameArray[6] === gameArray[7] && gameArray[6] === gameArray[8] &&
                     gameArray[6] == 2 ){
                     document.querySelector('.firstTacresult').innerHTML = `O wins by the third row `
                     firstTacdone = true;
+                    TacBlock(1, 0);
                     // document.querySelector('.firstTacresult').style.display = "flex";
                 }
             
@@ -312,6 +318,7 @@
                 gameArray[0] == 1 ){
                 document.querySelector('.firstTacresult').innerHTML =  `X wins by the first column `
                 firstTacdone = true;
+                TacBlock(1, 1);
                 // document.querySelector('.firstTacresult').style.display = "flex";
             }
                 //first column
@@ -319,6 +326,7 @@
                     gameArray[0] == 2 ){
                     document.querySelector('.firstTacresult').innerHTML = `O wins by the first column `
                     firstTacdone = true;
+                    TacBlock(1, 0);
                     // document.querySelector('.firstTacresult').style.display = "flex";
                 }
 
@@ -327,6 +335,7 @@
                 gameArray[1] == 1 ){
                 document.querySelector('.firstTacresult').innerHTML = `X wins by the second column `
                 firstTacdone = true;
+                TacBlock(1, 1);
                 // document.querySelector('.firstTacresult').style.display = "flex";
             }
                 //second column
@@ -334,6 +343,7 @@
                     gameArray[1] == 2 ){
                     document.querySelector('.firstTacresult').innerHTML = `O wins by the second column `
                     firstTacdone = true;
+                    TacBlock(1, 0);
                     // document.querySelector('.firstTacresult').style.display = "flex";
                 }
 
@@ -342,6 +352,7 @@
                 gameArray[2] == 1 ){
                 document.querySelector('.firstTacresult').innerHTML =  `X wins by the third column `
                 firstTacdone = true;
+                TacBlock(1, 1);
                 // document.querySelector('.firstTacresult').style.display = "flex";
             }
                 //third column
@@ -349,6 +360,7 @@
                     gameArray[2] == 2 ){
                     document.querySelector('.firstTacresult').innerHTML = `O wins by the third column `
                     firstTacdone = true;
+                    TacBlock(1, 0);
                     // document.querySelector('.firstTacresult').style.display = "flex";
                 }
 
@@ -358,6 +370,7 @@
                 gameArray[0] == 1 ){
                 document.querySelector('.firstTacresult').innerHTML = `X wins through the downhill diagonal `
                 firstTacdone = true;
+                TacBlock(1, 1);
                 // document.querySelector('.firstTacresult').style.display = "flex";
             }
                 // \ diagonal
@@ -365,6 +378,7 @@
                     gameArray[0] == 2 ){
                     document.querySelector('.firstTacresult').innerHTML = `O wins through the downhill diagonal `
                     firstTacdone = true;
+                    TacBlock(1, 0);
                     // document.querySelector('.firstTacresult').style.display = "flex";
                 }
 
@@ -373,6 +387,7 @@
                 gameArray[2] == 1 ){
                 document.querySelector('.firstTacresult').innerHTML = `X wins through the uphill diagonal `
                 firstTacdone = true;
+                TacBlock(1, 1);
                 // document.querySelector('.firstTacresult').style.display = "flex";
             }
                 // / diagonal
@@ -380,11 +395,13 @@
                     gameArray[2] == 2 ){
                     document.querySelector('.firstTacresult').innerHTML = `O wins through the uphill diagonal `
                     firstTacdone = true;
+                    TacBlock(1, 0);
                     // document.querySelector('.firstTacresult').style.display = "flex";
                 }
             else if (playCount == 9) {
                     document.querySelector('.firstTacresult').innerHTML = `Draw`
                     firstTacdone = true;
+                    TacBlock(1, 2);
                     // document.querySelector('.firstTacresult').style.display = "flex";
                     console.log("it runs")
             }
@@ -396,6 +413,7 @@
 
 
         sleep = () => {
-            console.log("next guy's turn")
+            // console.log("next guy's turn")
+            alert(" Cannot play there");
         }
 // console.log("console log works")
