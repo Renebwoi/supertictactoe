@@ -257,7 +257,7 @@ game preview button is 9
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 60px 60px 60px ;
     place-items: center;
 }
 .tinyTac {
