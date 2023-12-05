@@ -19,6 +19,7 @@
          sixthplayCount++;
 
          state++;
+         document.querySelector('.tinyTab6p1').textContent = "X";
          document.querySelector('.tab6p1').onclick = "sleep()"
      }
      else if (state == 1) {
@@ -30,6 +31,7 @@
          sixthgameArray[i-1] = 2;
          sixthplayCount++;
          state--;
+         document.querySelector('.tinyTab6p1').textContent = "O";
          document.querySelector('.tab6p1').onclick = "sleep()"
      }}
      //end for first box
@@ -45,6 +47,7 @@
          sixthgameArray[i-1] = 1;
          sixthplayCount++;
          state++;
+         document.querySelector('.tinyTab6p2').textContent = "X";
          document.querySelector('.tab6p2').onclick = "sleep()"
      }
      else if (state == 1) {
@@ -56,6 +59,7 @@
          sixthgameArray[i-1] = 2;
          sixthplayCount++;
          state--;
+         document.querySelector('.tinyTab6p2').textContent = "O";
          document.querySelector('.tab6p2').onclick = "sleep()"
      }}
      //end for sixth box
@@ -73,6 +77,7 @@
          sixthplayCount++;
 
          state++;
+         document.querySelector('.tinyTab6p3').textContent = "X";
          document.querySelector('.tab6p3').onclick = "sleep()"
      }
      else if (state == 1) {
@@ -84,6 +89,7 @@
          sixthgameArray[i-1] = 2;
          sixthplayCount++;
          state--;
+         document.querySelector('.tinyTab6p3').textContent = "O";
          document.querySelector('.tab6p3').onclick = "sleep()"
      }}
      //end for sixth box
@@ -100,6 +106,7 @@
          sixthgameArray[i-1] = 1;
          sixthplayCount++;
          state++;
+         document.querySelector('.tinyTab6p4').textContent = "X";
          document.querySelector('.tab6p4').onclick = "sleep()"
      }
      else if (state == 1) {
@@ -111,6 +118,7 @@
          sixthgameArray[i-1] = 2;
          sixthplayCount++;
          state--;
+         document.querySelector('.tinyTab6p4').textContent = "O";
          document.querySelector('.tab6p4').onclick = "sleep()"
      }}
      //end for fourth box
@@ -127,6 +135,7 @@
          sixthgameArray[i-1] = 1;
          sixthplayCount++;
          state++;
+         document.querySelector('.tinyTab6p5').textContent = "X";
          document.querySelector('.tab6p5').onclick = "sleep()"
      }
      else if (state == 1) {
@@ -138,6 +147,7 @@
          sixthgameArray[i-1] = 2;
          sixthplayCount++;
          state--;
+         document.querySelector('.tinyTab6p5').textContent = "O";
          document.querySelector('.tab6p5').onclick = "sleep()"
      }}
      //fifth box end
@@ -154,6 +164,7 @@
          sixthgameArray[i-1] = 1;
          sixthplayCount++;
          state++;
+         document.querySelector('.tinyTab6p6').textContent = "X";
          document.querySelector('.tab6p6').onclick = "sleep()"
      }
      else if (state == 1) {
@@ -165,6 +176,7 @@
          sixthgameArray[i-1] = 2;
          sixthplayCount++;
          state--;
+         document.querySelector('.tinyTab6p6').textContent = "O";
          document.querySelector('.tab6p6').onclick = "sleep()"
      }}
      //sixth box end
@@ -181,6 +193,7 @@
          sixthgameArray[i-1] = 1;
          sixthplayCount++;
          state++;
+         document.querySelector('.tinyTab6p7').textContent = "X";
          document.querySelector('.tab6p7').onclick = "sleep()"
      }
      else if (state == 1) {
@@ -192,6 +205,7 @@
          sixthgameArray[i-1] = 2;
          sixthplayCount++;
          state--;
+         document.querySelector('.tinyTab6p7').textContent = "O";
          document.querySelector('.tab6p7').onclick = "sleep()"
      }}
      //seventh box end
@@ -208,6 +222,7 @@
          sixthgameArray[i-1] = 1;
          sixthplayCount++;
          state++;
+         document.querySelector('.tinyTab6p8').textContent = "X";
          document.querySelector('.tab6p8').onclick = "sleep()"
      }
      else if (state == 1) {
@@ -219,6 +234,7 @@
          sixthgameArray[i-1] = 2;
          sixthplayCount++;
          state--;
+         document.querySelector('.tinyTab6p8').textContent = "O";
          document.querySelector('.tab6p8').onclick = "sleep()"
      }}
      //eight box end
@@ -235,6 +251,7 @@
          sixthgameArray[i-1] = 1;
          sixthplayCount++;
          state++;
+         document.querySelector('.tinyTab6p9').textContent = "X";
          document.querySelector('.tab6p9').onclick = "sleep()"
      }
      else if (state == 1) {
@@ -246,6 +263,7 @@
          sixthgameArray[i-1] = 2;
          sixthplayCount++;
          state--;
+         document.querySelector('.tinyTab6p9').textContent = "O";
          document.querySelector('.tab6p9').onclick = "sleep()"
      }}
      //ninth box end

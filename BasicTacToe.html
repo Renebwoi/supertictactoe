@@ -1,10 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="game.css">
+    <title>Super Tic Tac toe</title>
+</head>
+<body>
+    <div class="game-pad">
+        <div class="box tab1" onclick="displayValue(1)">
+            <!-- <div class="box-selectX">
+                <div class="Xbar1"></div>
+                <div class="Xbar2"></div>
+            </div>
+             <div class="box-selectO">
+                <div class="Ocircle1"></div>
+                
+            </div> -->
+        </div>
+        <div class="box tab2" onclick="displayValue(2)">
 
-        // document.querySelector('.firstTac').addEventListener("click", displayValue(1), Tacselect(1))
+        </div>
+        <div class="box tab3" onclick="displayValue(3)">
+
+        </div>
+        <div class="box tab4" onclick="displayValue(4)">
+
+        </div>
+        <div class="box tab5" onclick="displayValue(5)">
+
+        </div>
+        <div class="box tab6" onclick="displayValue(6)">
+
+        </div>
+        <div class="box tab7" onclick="displayValue(7)">
+
+        </div>
+        <div class="box tab8" onclick="displayValue(8)">
+
+        </div>
+        <div class="box tab9" onclick="displayValue(9)">
+
+        </div>
+
+    </div>
+    <div class="result">
+        <p>Refresh the page to play again</p>
+    </div>
+
+    <script>
+        
+        // document.querySelector('.tab1').addEventListener("click", displayValue(1))
         gameArray = [,,,,,,,,,]
         // console.log(gameArray.length)
         playCount = 0
         state = 0
-
         displayValue = (i) => {
             
             //for the first box
@@ -20,7 +70,6 @@
                 playCount++;
 
                 state++;
-                document.querySelector('.tinyTab1p1').textContent = "X";
                 document.querySelector('.tab1').onclick = "sleep()"
             }
             else if (state == 1) {
@@ -32,7 +81,6 @@
                 gameArray[i-1] = 2;
                 playCount++;
                 state--;
-                document.querySelector('.tinyTab1p1').textContent = "O";
                 document.querySelector('.tab1').onclick = "sleep()"
             }}
             //end for first box
@@ -48,7 +96,6 @@
                 gameArray[i-1] = 1;
                 playCount++;
                 state++;
-                document.querySelector('.tinyTab1p2').textContent = "X";
                 document.querySelector('.tab2').onclick = "sleep()"
             }
             else if (state == 1) {
@@ -60,7 +107,6 @@
                 gameArray[i-1] = 2;
                 playCount++;
                 state--;
-                document.querySelector('.tinyTab1p2').textContent = "O";
                 document.querySelector('.tab2').onclick = "sleep()"
             }}
             //end for second box
@@ -78,7 +124,6 @@
                 playCount++;
 
                 state++;
-                document.querySelector('.tinyTab1p3').textContent = "X";
                 document.querySelector('.tab3').onclick = "sleep()"
             }
             else if (state == 1) {
@@ -90,7 +135,6 @@
                 gameArray[i-1] = 2;
                 playCount++;
                 state--;
-                document.querySelector('.tinyTab1p3').textContent = "O";
                 document.querySelector('.tab3').onclick = "sleep()"
             }}
             //end for third box
@@ -107,7 +151,6 @@
                 gameArray[i-1] = 1;
                 playCount++;
                 state++;
-                document.querySelector('.tinyTab1p4').textContent = "X";
                 document.querySelector('.tab4').onclick = "sleep()"
             }
             else if (state == 1) {
@@ -119,7 +162,6 @@
                 gameArray[i-1] = 2;
                 playCount++;
                 state--;
-                document.querySelector('.tinyTab1p4').textContent = "O";
                 document.querySelector('.tab4').onclick = "sleep()"
             }}
             //end for fourth box
@@ -136,7 +178,6 @@
                 gameArray[i-1] = 1;
                 playCount++;
                 state++;
-                document.querySelector('.tinyTab1p5').textContent = "X";
                 document.querySelector('.tab5').onclick = "sleep()"
             }
             else if (state == 1) {
@@ -148,7 +189,6 @@
                 gameArray[i-1] = 2;
                 playCount++;
                 state--;
-                document.querySelector('.tinyTab1p5').textContent = "O";
                 document.querySelector('.tab5').onclick = "sleep()"
             }}
             //fifth box end
@@ -165,7 +205,6 @@
                 gameArray[i-1] = 1;
                 playCount++;
                 state++;
-                document.querySelector('.tinyTab1p6').textContent = "X";
                 document.querySelector('.tab6').onclick = "sleep()"
             }
             else if (state == 1) {
@@ -177,7 +216,6 @@
                 gameArray[i-1] = 2;
                 playCount++;
                 state--;
-                document.querySelector('.tinyTab1p6').textContent = "O";
                 document.querySelector('.tab6').onclick = "sleep()"
             }}
             //sixth box end
@@ -194,7 +232,6 @@
                 gameArray[i-1] = 1;
                 playCount++;
                 state++;
-                document.querySelector('.tinyTab1p7').textContent = "X";
                 document.querySelector('.tab7').onclick = "sleep()"
             }
             else if (state == 1) {
@@ -206,7 +243,6 @@
                 gameArray[i-1] = 2;
                 playCount++;
                 state--;
-                document.querySelector('.tinyTab1p7').textContent = "O";
                 document.querySelector('.tab7').onclick = "sleep()"
             }}
             //seventh box end
@@ -223,7 +259,6 @@
                 gameArray[i-1] = 1;
                 playCount++;
                 state++;
-                document.querySelector('.tinyTab1p8').textContent = "X";
                 document.querySelector('.tab8').onclick = "sleep()"
             }
             else if (state == 1) {
@@ -235,7 +270,6 @@
                 gameArray[i-1] = 2;
                 playCount++;
                 state--;
-                document.querySelector('.tinyTab1p8').textContent = "O";
                 document.querySelector('.tab8').onclick = "sleep()"
             }}
             //eight box end
@@ -252,7 +286,6 @@
                 gameArray[i-1] = 1;
                 playCount++;
                 state++;
-                document.querySelector('.tinyTab1p9').textContent = "X";
                 document.querySelector('.tab9').onclick = "sleep()"
             }
             else if (state == 1) {
@@ -264,174 +297,139 @@
                 gameArray[i-1] = 2;
                 playCount++;
                 state--;
-                document.querySelector('.tinyTab1p9').textContent = "O";
                 document.querySelector('.tab9').onclick = "sleep()"
             }}
             //ninth box end
 
-            // console.log(gameArray)
+            console.log(gameArray)
 
             checkWin();
         }
-        firstTacdone = false;
 
         checkWin = () => {
             //checking win condition //we can also run a loop on the horizontal,
             // vertical or diagonal to run 3(2 for diagonal) times and add 1 to the indexes each time
-            //but i'll just use this to better my edits <button onclick="reload()"> Refresh </button>
+            //but i'll just use this to better my edits
 
             //starting horizontally
             //firstrow
             if (gameArray[0] == gameArray[1] && gameArray[0] == gameArray[2] &&
                 gameArray[0] == 1 ){
-                document.querySelector('.firstTacresult').innerHTML = `X wins by the first row `
-                firstTacdone = true;
-                TacBlock(1, 1);
-                // document.querySelector('.firstTacresult').style.display = "flex";
+                document.querySelector('.result').innerHTML = `X wins by the first row <button onclick="reload()"> Refresh </button>`
+                document.querySelector('.result').style.display = "flex";
             }
                 //firstrow
                 else if (gameArray[0] == gameArray[1] && gameArray[0] == gameArray[2] &&
                     gameArray[0] == 2 ){
-                    document.querySelector('.firstTacresult').innerHTML = `O wins by the first row `
-                    firstTacdone = true;
-                    TacBlock(1, 0);
-                    // document.querySelector('.firstTacresult').style.display = "flex";
+                    document.querySelector('.result').innerHTML = `O wins by the first row <button onclick="reload()"> Refresh </button>`
+                    document.querySelector('.result').style.display = "flex";
                 }
 
             //second row
            else if (gameArray[3] == gameArray[4] && gameArray[3] == gameArray[5] &&
                 gameArray[3] == 1 ){
-                document.querySelector('.firstTacresult').innerHTML = `X wins by the second row `
-                firstTacdone = true;
-                TacBlock(1, 1);
-                // document.querySelector('.firstTacresult').style.display = "flex";
+                document.querySelector('.result').innerHTML = `X wins by the second row <button onclick="reload()"> Refresh </button>`
+                document.querySelector('.result').style.display = "flex";
             }
                 else if (gameArray[3] == gameArray[4] && gameArray[3] == gameArray[5] &&
                     gameArray[3] == 2 ){
-                    document.querySelector('.firstTacresult').innerHTML = `O wins by the second row `
-                    firstTacdone = true;
-                    TacBlock(1, 0);
-                    // document.querySelector('.firstTacresult').style.display = "flex";
+                    document.querySelector('.result').innerHTML = `O wins by the second row <button onclick="reload()"> Refresh </button>`
+                    document.querySelector('.result').style.display = "flex";
                 }
 
             //third row
            else if (gameArray[6] === gameArray[7] && gameArray[6] === gameArray[8] &&
                 gameArray[6] == 1 ){
-                document.querySelector('.firstTacresult').innerHTML = `X wins by the third row `
-                firstTacdone = true;
-                TacBlock(1, 1);
-                // document.querySelector('.firstTacresult').style.display = "flex";
+                document.querySelector('.result').innerHTML = `X wins by the third row <button onclick="reload()"> Refresh </button>`
+                document.querySelector('.result').style.display = "flex";
             }
                 else if (gameArray[6] === gameArray[7] && gameArray[6] === gameArray[8] &&
                     gameArray[6] == 2 ){
-                    document.querySelector('.firstTacresult').innerHTML = `O wins by the third row `
-                    firstTacdone = true;
-                    TacBlock(1, 0);
-                    // document.querySelector('.firstTacresult').style.display = "flex";
+                    document.querySelector('.result').innerHTML = `O wins by the third row <button onclick="reload()"> Refresh </button>`
+                    document.querySelector('.result').style.display = "flex";
                 }
             
             //going vertically
             //first column
            else if (gameArray[0] == gameArray[3] && gameArray[0] == gameArray[6] &&
                 gameArray[0] == 1 ){
-                document.querySelector('.firstTacresult').innerHTML =  `X wins by the first column `
-                firstTacdone = true;
-                TacBlock(1, 1);
-                // document.querySelector('.firstTacresult').style.display = "flex";
+                document.querySelector('.result').innerHTML =  `X wins by the first column <button onclick="reload()"> Refresh </button>`
+                document.querySelector('.result').style.display = "flex";
             }
                 //first column
                 else if (gameArray[0] == gameArray[3] && gameArray[0] == gameArray[6] &&
                     gameArray[0] == 2 ){
-                    document.querySelector('.firstTacresult').innerHTML = `O wins by the first column `
-                    firstTacdone = true;
-                    TacBlock(1, 0);
-                    // document.querySelector('.firstTacresult').style.display = "flex";
+                    document.querySelector('.result').innerHTML = `O wins by the first column <button onclick="reload()"> Refresh </button>`
+                    document.querySelector('.result').style.display = "flex";
                 }
 
             //second column
             else if (gameArray[1] == gameArray[4] && gameArray[1] == gameArray[7] &&
                 gameArray[1] == 1 ){
-                document.querySelector('.firstTacresult').innerHTML = `X wins by the second column `
-                firstTacdone = true;
-                TacBlock(1, 1);
-                // document.querySelector('.firstTacresult').style.display = "flex";
+                document.querySelector('.result').innerHTML = `X wins by the second column <button onclick="reload()"> Refresh </button>`
+                document.querySelector('.result').style.display = "flex";
             }
                 //second column
                 else if (gameArray[1] == gameArray[4] && gameArray[1] == gameArray[7] &&
                     gameArray[1] == 2 ){
-                    document.querySelector('.firstTacresult').innerHTML = `O wins by the second column `
-                    firstTacdone = true;
-                    TacBlock(1, 0);
-                    // document.querySelector('.firstTacresult').style.display = "flex";
+                    document.querySelector('.result').innerHTML = `O wins by the second column <button onclick="reload()"> Refresh </button>`
+                    document.querySelector('.result').style.display = "flex";
                 }
 
             //third column
             else if (gameArray[2] == gameArray[5] && gameArray[2] == gameArray[8] &&
                 gameArray[2] == 1 ){
-                document.querySelector('.firstTacresult').innerHTML =  `X wins by the third column `
-                firstTacdone = true;
-                TacBlock(1, 1);
-                // document.querySelector('.firstTacresult').style.display = "flex";
+                document.querySelector('.result').innerHTML =  `X wins by the third column <button onclick="reload()"> Refresh </button>`
+                document.querySelector('.result').style.display = "flex";
             }
                 //third column
                 else if (gameArray[2] == gameArray[5] && gameArray[2] == gameArray[8] &&
                     gameArray[2] == 2 ){
-                    document.querySelector('.firstTacresult').innerHTML = `O wins by the third column `
-                    firstTacdone = true;
-                    TacBlock(1, 0);
-                    // document.querySelector('.firstTacresult').style.display = "flex";
+                    document.querySelector('.result').innerHTML = `O wins by the third column <button onclick="reload()"> Refresh </button>`
+                    document.querySelector('.result').style.display = "flex";
                 }
 
             //going diagonally
             // \ diagonal
             else if (gameArray[0] == gameArray[4] && gameArray[0] == gameArray[8] &&
                 gameArray[0] == 1 ){
-                document.querySelector('.firstTacresult').innerHTML = `X wins through the downhill diagonal `
-                firstTacdone = true;
-                TacBlock(1, 1);
-                // document.querySelector('.firstTacresult').style.display = "flex";
+                document.querySelector('.result').innerHTML = `X wins through the downhill diagonal <button onclick="reload()"> Refresh </button>`
+                document.querySelector('.result').style.display = "flex";
             }
                 // \ diagonal
                 else if (gameArray[0] == gameArray[4] && gameArray[0] == gameArray[8] &&
                     gameArray[0] == 2 ){
-                    document.querySelector('.firstTacresult').innerHTML = `O wins through the downhill diagonal `
-                    firstTacdone = true;
-                    TacBlock(1, 0);
-                    // document.querySelector('.firstTacresult').style.display = "flex";
+                    document.querySelector('.result').innerHTML = `O wins through the downhill diagonal <button onclick="reload()"> Refresh </button>`
+                    document.querySelector('.result').style.display = "flex";
                 }
 
             // / diagonal    
             else if (gameArray[2] == gameArray[4] && gameArray[2] == gameArray[6] &&
                 gameArray[2] == 1 ){
-                document.querySelector('.firstTacresult').innerHTML = `X wins through the uphill diagonal `
-                firstTacdone = true;
-                TacBlock(1, 1);
-                // document.querySelector('.firstTacresult').style.display = "flex";
+                document.querySelector('.result').innerHTML = `X wins through the uphill diagonal <button onclick="reload()"> Refresh </button>`
+                document.querySelector('.result').style.display = "flex";
             }
                 // / diagonal
                 else if (gameArray[2] == gameArray[4] && gameArray[2] == gameArray[6] &&
                     gameArray[2] == 2 ){
-                    document.querySelector('.firstTacresult').innerHTML = `O wins through the uphill diagonal `
-                    firstTacdone = true;
-                    TacBlock(1, 0);
-                    // document.querySelector('.firstTacresult').style.display = "flex";
+                    document.querySelector('.result').innerHTML = `O wins through the uphill diagonal <button onclick="reload()"> Refresh </button>`
+                    document.querySelector('.result').style.display = "flex";
                 }
             else if (playCount == 9) {
-                    document.querySelector('.firstTacresult').innerHTML = `Draw`
-                    firstTacdone = true;
-                    TacBlock(1, 2);
-                    // document.querySelector('.firstTacresult').style.display = "flex";
+                    document.querySelector('.result').innerHTML = `Draw<button onclick="reload()"> Refresh </button>`
+                    document.querySelector('.result').style.display = "flex";
                     console.log("it runs")
             }
+        }
+
+
+        sleep = () => {
+            console.log("next guy's turn")
         }
 
         reload= () => {
             document.location.reload(true)
         }
-
-
-        sleep = () => {
-            // console.log("next guy's turn")
-            alert(" Cannot play there");
-        }
-// console.log("console log works")
+    </script>
+</body>
+</html>

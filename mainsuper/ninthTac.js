@@ -19,6 +19,7 @@
          ninthplayCount++;
 
          state++;
+         document.querySelector('.tinyTab9p1').textContent = "X";
          document.querySelector('.tab9p1').onclick = "sleep()"
      }
      else if (state == 1) {
@@ -30,6 +31,7 @@
          ninthgameArray[i-1] = 2;
          ninthplayCount++;
          state--;
+         document.querySelector('.tinyTab9p1').textContent = "X";
          document.querySelector('.tab9p1').onclick = "sleep()"
      }}
      //end for first box
@@ -45,6 +47,7 @@
          ninthgameArray[i-1] = 1;
          ninthplayCount++;
          state++;
+         document.querySelector('.tinyTab9p2').textContent = "X";
          document.querySelector('.tab9p2').onclick = "sleep()"
      }
      else if (state == 1) {
@@ -56,6 +59,7 @@
          ninthgameArray[i-1] = 2;
          ninthplayCount++;
          state--;
+         document.querySelector('.tinyTab9p2').textContent = "X";
          document.querySelector('.tab9p2').onclick = "sleep()"
      }}
      //end for ninth box
@@ -73,6 +77,7 @@
          ninthplayCount++;
 
          state++;
+         document.querySelector('.tinyTab9p3').textContent = "X";
          document.querySelector('.tab9p3').onclick = "sleep()"
      }
      else if (state == 1) {
@@ -84,6 +89,7 @@
          ninthgameArray[i-1] = 2;
          ninthplayCount++;
          state--;
+         document.querySelector('.tinyTab9p3').textContent = "X";
          document.querySelector('.tab9p3').onclick = "sleep()"
      }}
      //end for ninth box
@@ -100,6 +106,7 @@
          ninthgameArray[i-1] = 1;
          ninthplayCount++;
          state++;
+         document.querySelector('.tinyTab9p4').textContent = "X";
          document.querySelector('.tab9p4').onclick = "sleep()"
      }
      else if (state == 1) {
@@ -111,6 +118,7 @@
          ninthgameArray[i-1] = 2;
          ninthplayCount++;
          state--;
+         document.querySelector('.tinyTab9p4').textContent = "X";
          document.querySelector('.tab9p4').onclick = "sleep()"
      }}
      //end for fourth box
@@ -127,6 +135,7 @@
          ninthgameArray[i-1] = 1;
          ninthplayCount++;
          state++;
+         document.querySelector('.tinyTab9p5').textContent = "X";
          document.querySelector('.tab9p5').onclick = "sleep()"
      }
      else if (state == 1) {
@@ -138,6 +147,7 @@
          ninthgameArray[i-1] = 2;
          ninthplayCount++;
          state--;
+         document.querySelector('.tinyTab9p5').textContent = "X";
          document.querySelector('.tab9p5').onclick = "sleep()"
      }}
      //fifth box end
@@ -154,6 +164,7 @@
          ninthgameArray[i-1] = 1;
          ninthplayCount++;
          state++;
+         document.querySelector('.tinyTab9p6').textContent = "X";
          document.querySelector('.tab9p6').onclick = "sleep()"
      }
      else if (state == 1) {
@@ -165,6 +176,7 @@
          ninthgameArray[i-1] = 2;
          ninthplayCount++;
          state--;
+         document.querySelector('.tinyTab9p6').textContent = "X";
          document.querySelector('.tab9p6').onclick = "sleep()"
      }}
      //sixth box end
@@ -181,6 +193,7 @@
          ninthgameArray[i-1] = 1;
          ninthplayCount++;
          state++;
+         document.querySelector('.tinyTab9p7').textContent = "X";
          document.querySelector('.tab9p7').onclick = "sleep()"
      }
      else if (state == 1) {
@@ -192,6 +205,7 @@
          ninthgameArray[i-1] = 2;
          ninthplayCount++;
          state--;
+         document.querySelector('.tinyTab9p7').textContent = "X";
          document.querySelector('.tab9p7').onclick = "sleep()"
      }}
      //seventh box end
@@ -208,6 +222,7 @@
          ninthgameArray[i-1] = 1;
          ninthplayCount++;
          state++;
+         document.querySelector('.tinyTab9p8').textContent = "X";
          document.querySelector('.tab9p8').onclick = "sleep()"
      }
      else if (state == 1) {
@@ -219,6 +234,7 @@
          ninthgameArray[i-1] = 2;
          ninthplayCount++;
          state--;
+         document.querySelector('.tinyTab9p8').textContent = "X";
          document.querySelector('.tab9p8').onclick = "sleep()"
      }}
      //eight box end
@@ -235,6 +251,7 @@
          ninthgameArray[i-1] = 1;
          ninthplayCount++;
          state++;
+         document.querySelector('.tinyTab9p9').textContent = "X";
          document.querySelector('.tab9p9').onclick = "sleep()"
      }
      else if (state == 1) {
@@ -246,6 +263,7 @@
          ninthgameArray[i-1] = 2;
          ninthplayCount++;
          state--;
+         document.querySelector('.tinyTab9p9').textContent = "X";
          document.querySelector('.tab9p9').onclick = "sleep()"
      }}
      //ninth box end

@@ -19,6 +19,7 @@
          eightplayCount++;
 
          state++;
+         document.querySelector('.tinyTab8p1').textContent = "X";
          document.querySelector('.tab8p1').onclick = "sleep()"
      }
      else if (state == 1) {
@@ -30,6 +31,7 @@
          eightgameArray[i-1] = 2;
          eightplayCount++;
          state--;
+         document.querySelector('.tinyTab8p1').textContent = "O";
          document.querySelector('.tab8p1').onclick = "sleep()"
      }}
      //end for first box
@@ -45,6 +47,7 @@
          eightgameArray[i-1] = 1;
          eightplayCount++;
          state++;
+         document.querySelector('.tinyTab8p2').textContent = "X";
          document.querySelector('.tab8p2').onclick = "sleep()"
      }
      else if (state == 1) {
@@ -56,6 +59,7 @@
          eightgameArray[i-1] = 2;
          eightplayCount++;
          state--;
+         document.querySelector('.tinyTab8p2').textContent = "O";
          document.querySelector('.tab8p2').onclick = "sleep()"
      }}
      //end for eight box
@@ -73,6 +77,7 @@
          eightplayCount++;
 
          state++;
+         document.querySelector('.tinyTab8p3').textContent = "X";
          document.querySelector('.tab8p3').onclick = "sleep()"
      }
      else if (state == 1) {
@@ -84,6 +89,7 @@
          eightgameArray[i-1] = 2;
          eightplayCount++;
          state--;
+         document.querySelector('.tinyTab8p3').textContent = "O";
          document.querySelector('.tab8p3').onclick = "sleep()"
      }}
      //end for eight box
@@ -100,6 +106,7 @@
          eightgameArray[i-1] = 1;
          eightplayCount++;
          state++;
+         document.querySelector('.tinyTab8p4').textContent = "X";
          document.querySelector('.tab8p4').onclick = "sleep()"
      }
      else if (state == 1) {
@@ -111,6 +118,7 @@
          eightgameArray[i-1] = 2;
          eightplayCount++;
          state--;
+         document.querySelector('.tinyTab8p4').textContent = "O";
          document.querySelector('.tab8p4').onclick = "sleep()"
      }}
      //end for fourth box
@@ -127,6 +135,7 @@
          eightgameArray[i-1] = 1;
          eightplayCount++;
          state++;
+         document.querySelector('.tinyTab8p5').textContent = "X";
          document.querySelector('.tab8p5').onclick = "sleep()"
      }
      else if (state == 1) {
@@ -138,6 +147,7 @@
          eightgameArray[i-1] = 2;
          eightplayCount++;
          state--;
+         document.querySelector('.tinyTab8p5').textContent = "O";
          document.querySelector('.tab8p5').onclick = "sleep()"
      }}
      //fifth box end
@@ -154,6 +164,7 @@
          eightgameArray[i-1] = 1;
          eightplayCount++;
          state++;
+         document.querySelector('.tinyTab8p6').textContent = "X";
          document.querySelector('.tab8p6').onclick = "sleep()"
      }
      else if (state == 1) {
@@ -165,6 +176,7 @@
          eightgameArray[i-1] = 2;
          eightplayCount++;
          state--;
+         document.querySelector('.tinyTab8p6').textContent = "O";
          document.querySelector('.tab8p6').onclick = "sleep()"
      }}
      //sixth box end
@@ -181,6 +193,7 @@
          eightgameArray[i-1] = 1;
          eightplayCount++;
          state++;
+         document.querySelector('.tinyTab8p7').textContent = "X";
          document.querySelector('.tab8p7').onclick = "sleep()"
      }
      else if (state == 1) {
@@ -192,6 +205,7 @@
          eightgameArray[i-1] = 2;
          eightplayCount++;
          state--;
+         document.querySelector('.tinyTab8p7').textContent = "O";
          document.querySelector('.tab8p7').onclick = "sleep()"
      }}
      //seventh box end
@@ -208,6 +222,7 @@
          eightgameArray[i-1] = 1;
          eightplayCount++;
          state++;
+         document.querySelector('.tinyTab8p8').textContent = "X";
          document.querySelector('.tab8p8').onclick = "sleep()"
      }
      else if (state == 1) {
@@ -219,6 +234,7 @@
          eightgameArray[i-1] = 2;
          eightplayCount++;
          state--;
+         document.querySelector('.tinyTab8p8').textContent = "O";
          document.querySelector('.tab8p8').onclick = "sleep()"
      }}
      //eight box end
@@ -235,6 +251,7 @@
          eightgameArray[i-1] = 1;
          eightplayCount++;
          state++;
+         document.querySelector('.tinyTab8p9').textContent = "X";
          document.querySelector('.tab8p9').onclick = "sleep()"
      }
      else if (state == 1) {
@@ -246,6 +263,7 @@
          eightgameArray[i-1] = 2;
          eightplayCount++;
          state--;
+         document.querySelector('.tinyTab8p9').textContent = "O";
          document.querySelector('.tab8p9').onclick = "sleep()"
      }}
      //ninth box end

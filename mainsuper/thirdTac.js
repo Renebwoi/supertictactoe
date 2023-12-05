@@ -19,6 +19,7 @@
          thirdplayCount++;
 
          state++;
+         document.querySelector('.tinyTab3p1').textContent = "X";
          document.querySelector('.tab3p1').onclick = "sleep()"
      }
      else if (state == 1) {
@@ -30,6 +31,7 @@
          thirdgameArray[i-1] = 2;
          thirdplayCount++;
          state--;
+         document.querySelector('.tinyTab3p1').textContent = "O";
          document.querySelector('.tab3p1').onclick = "sleep()"
      }}
      //end for first box
@@ -45,6 +47,7 @@
          thirdgameArray[i-1] = 1;
          thirdplayCount++;
          state++;
+         document.querySelector('.tinyTab3p2').textContent = "X";
          document.querySelector('.tab3p2').onclick = "sleep()"
      }
      else if (state == 1) {
@@ -56,6 +59,7 @@
          thirdgameArray[i-1] = 2;
          thirdplayCount++;
          state--;
+         document.querySelector('.tinyTab3p2').textContent = "O";
          document.querySelector('.tab3p2').onclick = "sleep()"
      }}
      //end for third box
@@ -73,6 +77,7 @@
          thirdplayCount++;
 
          state++;
+         document.querySelector('.tinyTab3p3').textContent = "X";
          document.querySelector('.tab3p3').onclick = "sleep()"
      }
      else if (state == 1) {
@@ -84,6 +89,7 @@
          thirdgameArray[i-1] = 2;
          thirdplayCount++;
          state--;
+         document.querySelector('.tinyTab3p3').textContent = "O";
          document.querySelector('.tab3p3').onclick = "sleep()"
      }}
      //end for third box
@@ -100,6 +106,7 @@
          thirdgameArray[i-1] = 1;
          thirdplayCount++;
          state++;
+         document.querySelector('.tinyTab3p4').textContent = "X";
          document.querySelector('.tab3p4').onclick = "sleep()"
      }
      else if (state == 1) {
@@ -111,6 +118,7 @@
          thirdgameArray[i-1] = 2;
          thirdplayCount++;
          state--;
+         document.querySelector('.tinyTab3p4').textContent = "O";
          document.querySelector('.tab3p4').onclick = "sleep()"
      }}
      //end for fourth box
@@ -127,6 +135,7 @@
          thirdgameArray[i-1] = 1;
          thirdplayCount++;
          state++;
+         document.querySelector('.tinyTab3p5').textContent = "X";
          document.querySelector('.tab3p5').onclick = "sleep()"
      }
      else if (state == 1) {
@@ -138,6 +147,7 @@
          thirdgameArray[i-1] = 2;
          thirdplayCount++;
          state--;
+         document.querySelector('.tinyTab3p5').textContent = "O";
          document.querySelector('.tab3p5').onclick = "sleep()"
      }}
      //fifth box end
@@ -154,6 +164,7 @@
          thirdgameArray[i-1] = 1;
          thirdplayCount++;
          state++;
+         document.querySelector('.tinyTab3p6').textContent = "X";
          document.querySelector('.tab3p6').onclick = "sleep()"
      }
      else if (state == 1) {
@@ -165,6 +176,7 @@
          thirdgameArray[i-1] = 2;
          thirdplayCount++;
          state--;
+         document.querySelector('.tinyTab3p6').textContent = "O";
          document.querySelector('.tab3p6').onclick = "sleep()"
      }}
      //sixth box end
@@ -181,6 +193,7 @@
          thirdgameArray[i-1] = 1;
          thirdplayCount++;
          state++;
+         document.querySelector('.tinyTab3p7').textContent = "X";
          document.querySelector('.tab3p7').onclick = "sleep()"
      }
      else if (state == 1) {
@@ -192,6 +205,7 @@
          thirdgameArray[i-1] = 2;
          thirdplayCount++;
          state--;
+         document.querySelector('.tinyTab3p7').textContent = "O";
          document.querySelector('.tab3p7').onclick = "sleep()"
      }}
      //seventh box end
@@ -208,6 +222,7 @@
          thirdgameArray[i-1] = 1;
          thirdplayCount++;
          state++;
+         document.querySelector('.tinyTab3p8').textContent = "X";
          document.querySelector('.tab3p8').onclick = "sleep()"
      }
      else if (state == 1) {
@@ -219,6 +234,7 @@
          thirdgameArray[i-1] = 2;
          thirdplayCount++;
          state--;
+         document.querySelector('.tinyTab3p8').textContent = "O";
          document.querySelector('.tab3p8').onclick = "sleep()"
      }}
      //eight box end
@@ -235,6 +251,7 @@
          thirdgameArray[i-1] = 1;
          thirdplayCount++;
          state++;
+         document.querySelector('.tinyTab3p9').textContent = "X";
          document.querySelector('.tab3p9').onclick = "sleep()"
      }
      else if (state == 1) {
@@ -246,6 +263,7 @@
          thirdgameArray[i-1] = 2;
          thirdplayCount++;
          state--;
+         document.querySelector('.tinyTab3p9').textContent = "O";
          document.querySelector('.tab3p9').onclick = "sleep()"
      }}
      //ninth box end

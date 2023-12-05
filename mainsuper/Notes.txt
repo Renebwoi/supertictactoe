@@ -25,4 +25,17 @@ put it in a general function and just call it for all results
 To check for final game draw
 if the finalGamearray doesn't have any empty element or is all filled up, we conclude it as a draw
 
+use a for each function to loop through all the elements and assign 1 to a variable
+the moment any of them is empty
+then if that variable is not equal to 1 at the end, execute the draw action
+
 this check should happen on every click
+
+
+Z-indexes
+
+maingame sections(Tacs) are 1
+The Tac-blockers switches between 0 and 2
+The green result bar on top is at 6
+final game result display(GameEnd) is at 10
+The game preview(or map) will be 8
