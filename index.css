@@ -71,3 +71,28 @@ main li{
     color: black;
     padding: 5px;
 }
+@media only screen and (max-width: 600px) {
+    .superGame,.justGame{
+        position: static;
+    }
+    .animationDiv{
+        margin-bottom: 50px;
+    }
+    .animationDivInner{
+        min-width: 100px;
+        min-height: 180px;
+        background-size: contain;
+    }
+    p{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 872px){
+    .superGame,.justGame{
+        height: auto;
+        padding: 10px;
+        bottom: -70px;
+    }
+}

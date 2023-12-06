@@ -311,18 +311,6 @@ game preview button is 9
 }
 
 @media only screen and (max-width: 810px) {
-    @property --ws {
-        syntax: "<length>";
-        initial: 400px;
-        inherits: true;
-    }
-    
-    @property --hs {
-        syntax: "<length>";
-        initial: 300px;
-        inherits: true;
-    }
-    
     *{
         --ws: 600px;
         --hs: 420px;
@@ -354,19 +342,7 @@ game preview button is 9
 }
 }
 
-@media only screen and (min-width: 320px) {
-    @property --ws {
-        syntax: "<length>";
-        initial: 400px;
-        inherits: true;
-    }
-    
-    @property --hs {
-        syntax: "<length>";
-        initial: 300px;
-        inherits: true;
-    }
-    
+@media only screen and (min-width: 200px) {
     *{
         --ws: 81vw;
         --hs: 72vh;
@@ -407,5 +383,8 @@ game preview button is 9
     z-index: 9;
     height: 25px;
     border-style: solid;
+}
+.GamePreviewButton{
+    right: 40px;
 }
 }
