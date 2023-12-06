@@ -301,14 +301,14 @@
      //third row
     else if (thirdgameArray[3] == thirdgameArray[4] && thirdgameArray[3] == thirdgameArray[5] &&
          thirdgameArray[3] == 1 ){
-         document.querySelector('.thirdTacresult').innerHTML = `X wins by the third row `
+         document.querySelector('.thirdTacresult').innerHTML = `X wins by the second row `
          thirdTacdone = true;
          TacBlock(3, 1);
          // document.querySelector('.thirdTacresult').style.display = "flex";
      }
          else if (thirdgameArray[3] == thirdgameArray[4] && thirdgameArray[3] == thirdgameArray[5] &&
              thirdgameArray[3] == 2 ){
-             document.querySelector('.thirdTacresult').innerHTML = `O wins by the third row `
+             document.querySelector('.thirdTacresult').innerHTML = `O wins by the second row `
              thirdTacdone = true;
              TacBlock(3, 0);
              // document.querySelector('.thirdTacresult').style.display = "flex";
@@ -351,7 +351,7 @@
      //third column
      else if (thirdgameArray[1] == thirdgameArray[4] && thirdgameArray[1] == thirdgameArray[7] &&
          thirdgameArray[1] == 1 ){
-         document.querySelector('.thirdTacresult').innerHTML = `X wins by the third column `
+         document.querySelector('.thirdTacresult').innerHTML = `X wins by the second column `
          thirdTacdone = true;
          TacBlock(3, 1);
          // document.querySelector('.thirdTacresult').style.display = "flex";
@@ -359,7 +359,7 @@
          //third column
          else if (thirdgameArray[1] == thirdgameArray[4] && thirdgameArray[1] == thirdgameArray[7] &&
              thirdgameArray[1] == 2 ){
-             document.querySelector('.thirdTacresult').innerHTML = `O wins by the third column `
+             document.querySelector('.thirdTacresult').innerHTML = `O wins by the second column `
              thirdTacdone = true;
              TacBlock(3, 0);
              // document.querySelector('.thirdTacresult').style.display = "flex";

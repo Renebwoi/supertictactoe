@@ -301,14 +301,14 @@
      //fifth row
     else if (fifthgameArray[3] == fifthgameArray[4] && fifthgameArray[3] == fifthgameArray[5] &&
          fifthgameArray[3] == 1 ){
-         document.querySelector('.fifthTacresult').innerHTML = `X wins by the fifth row `
+         document.querySelector('.fifthTacresult').innerHTML = `X wins by the second row `
          fifthTacdone = true;
          TacBlock(5, 1);
          // document.querySelector('.fifthTacresult').style.display = "flex";
      }
          else if (fifthgameArray[3] == fifthgameArray[4] && fifthgameArray[3] == fifthgameArray[5] &&
              fifthgameArray[3] == 2 ){
-             document.querySelector('.fifthTacresult').innerHTML = `O wins by the fifth row `
+             document.querySelector('.fifthTacresult').innerHTML = `O wins by the second row `
              fifthTacdone = true;
              TacBlock(5, 0);
              // document.querySelector('.fifthTacresult').style.display = "flex";
@@ -317,14 +317,14 @@
      //fifth row
     else if (fifthgameArray[6] === fifthgameArray[7] && fifthgameArray[6] === fifthgameArray[8] &&
          fifthgameArray[6] == 1 ){
-         document.querySelector('.fifthTacresult').innerHTML = `X wins by the fifth row `
+         document.querySelector('.fifthTacresult').innerHTML = `X wins by the third row `
          fifthTacdone = true;
          TacBlock(5, 1);
          // document.querySelector('.fifthTacresult').style.display = "flex";
      }
          else if (fifthgameArray[6] === fifthgameArray[7] && fifthgameArray[6] === fifthgameArray[8] &&
              fifthgameArray[6] == 2 ){
-             document.querySelector('.fifthTacresult').innerHTML = `O wins by the fifth row `
+             document.querySelector('.fifthTacresult').innerHTML = `O wins by the third row `
              fifthTacdone = true;
              TacBlock(5, 0);
              // document.querySelector('.fifthTacresult').style.display = "flex";
@@ -351,7 +351,7 @@
      //fifth column
      else if (fifthgameArray[1] == fifthgameArray[4] && fifthgameArray[1] == fifthgameArray[7] &&
          fifthgameArray[1] == 1 ){
-         document.querySelector('.fifthTacresult').innerHTML = `X wins by the fifth column `
+         document.querySelector('.fifthTacresult').innerHTML = `X wins by the second column `
          fifthTacdone = true;
          TacBlock(5, 1);
          // document.querySelector('.fifthTacresult').style.display = "flex";
@@ -359,7 +359,7 @@
          //fifth column
          else if (fifthgameArray[1] == fifthgameArray[4] && fifthgameArray[1] == fifthgameArray[7] &&
              fifthgameArray[1] == 2 ){
-             document.querySelector('.fifthTacresult').innerHTML = `O wins by the fifth column `
+             document.querySelector('.fifthTacresult').innerHTML = `O wins by the second column `
              fifthTacdone = true;
              TacBlock(5, 0);
              // document.querySelector('.fifthTacresult').style.display = "flex";
@@ -368,7 +368,7 @@
      //fifth column
      else if (fifthgameArray[2] == fifthgameArray[5] && fifthgameArray[2] == fifthgameArray[8] &&
          fifthgameArray[2] == 1 ){
-         document.querySelector('.fifthTacresult').innerHTML =  `X wins by the fifth column `
+         document.querySelector('.fifthTacresult').innerHTML =  `X wins by the third column `
          fifthTacdone = true;
          TacBlock(5, 1);
          // document.querySelector('.fifthTacresult').style.display = "flex";
@@ -376,7 +376,7 @@
          //fifth column
          else if (fifthgameArray[2] == fifthgameArray[5] && fifthgameArray[2] == fifthgameArray[8] &&
              fifthgameArray[2] == 2 ){
-             document.querySelector('.fifthTacresult').innerHTML = `O wins by the fifth column `
+             document.querySelector('.fifthTacresult').innerHTML = `O wins by the third column `
              fifthTacdone = true;
              TacBlock(5, 0);
              // document.querySelector('.fifthTacresult').style.display = "flex";

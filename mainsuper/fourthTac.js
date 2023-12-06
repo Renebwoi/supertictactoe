@@ -301,14 +301,14 @@
      //fourth row
     else if (fourthgameArray[3] == fourthgameArray[4] && fourthgameArray[3] == fourthgameArray[5] &&
          fourthgameArray[3] == 1 ){
-         document.querySelector('.fourthTacresult').innerHTML = `X wins by the fourth row `
+         document.querySelector('.fourthTacresult').innerHTML = `X wins by the second row `
          fourthTacdone = true;
          TacBlock(4, 1);
          // document.querySelector('.fourthTacresult').style.display = "flex";
      }
          else if (fourthgameArray[3] == fourthgameArray[4] && fourthgameArray[3] == fourthgameArray[5] &&
              fourthgameArray[3] == 2 ){
-             document.querySelector('.fourthTacresult').innerHTML = `O wins by the fourth row `
+             document.querySelector('.fourthTacresult').innerHTML = `O wins by the second row `
              fourthTacdone = true;
              TacBlock(4, 0);
              // document.querySelector('.fourthTacresult').style.display = "flex";
@@ -317,14 +317,14 @@
      //fourth row
     else if (fourthgameArray[6] === fourthgameArray[7] && fourthgameArray[6] === fourthgameArray[8] &&
          fourthgameArray[6] == 1 ){
-         document.querySelector('.fourthTacresult').innerHTML = `X wins by the fourth row `
+         document.querySelector('.fourthTacresult').innerHTML = `X wins by the third row `
          fourthTacdone = true;
          TacBlock(4, 1);
          // document.querySelector('.fourthTacresult').style.display = "flex";
      }
          else if (fourthgameArray[6] === fourthgameArray[7] && fourthgameArray[6] === fourthgameArray[8] &&
              fourthgameArray[6] == 2 ){
-             document.querySelector('.fourthTacresult').innerHTML = `O wins by the fourth row `
+             document.querySelector('.fourthTacresult').innerHTML = `O wins by the third row `
              fourthTacdone = true;
              TacBlock(4, 0);
              // document.querySelector('.fourthTacresult').style.display = "flex";
@@ -351,7 +351,7 @@
      //fourth column
      else if (fourthgameArray[1] == fourthgameArray[4] && fourthgameArray[1] == fourthgameArray[7] &&
          fourthgameArray[1] == 1 ){
-         document.querySelector('.fourthTacresult').innerHTML = `X wins by the fourth column `
+         document.querySelector('.fourthTacresult').innerHTML = `X wins by the second column `
          fourthTacdone = true;
          TacBlock(4, 1);
          // document.querySelector('.fourthTacresult').style.display = "flex";
@@ -359,7 +359,7 @@
          //fourth column
          else if (fourthgameArray[1] == fourthgameArray[4] && fourthgameArray[1] == fourthgameArray[7] &&
              fourthgameArray[1] == 2 ){
-             document.querySelector('.fourthTacresult').innerHTML = `O wins by the fourth column `
+             document.querySelector('.fourthTacresult').innerHTML = `O wins by the second column `
              fourthTacdone = true;
              TacBlock(4, 0);
              // document.querySelector('.fourthTacresult').style.display = "flex";
@@ -368,7 +368,7 @@
      //fourth column
      else if (fourthgameArray[2] == fourthgameArray[5] && fourthgameArray[2] == fourthgameArray[8] &&
          fourthgameArray[2] == 1 ){
-         document.querySelector('.fourthTacresult').innerHTML =  `X wins by the fourth column `
+         document.querySelector('.fourthTacresult').innerHTML =  `X wins by the third column `
          fourthTacdone = true;
          TacBlock(4, 1);
          // document.querySelector('.fourthTacresult').style.display = "flex";
@@ -376,7 +376,7 @@
          //fourth column
          else if (fourthgameArray[2] == fourthgameArray[5] && fourthgameArray[2] == fourthgameArray[8] &&
              fourthgameArray[2] == 2 ){
-             document.querySelector('.fourthTacresult').innerHTML = `O wins by the fourth column `
+             document.querySelector('.fourthTacresult').innerHTML = `O wins by the third column `
              fourthTacdone = true;
              TacBlock(4, 0);
              // document.querySelector('.fourthTacresult').style.display = "flex";

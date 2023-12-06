@@ -300,14 +300,14 @@
      //seventh row
     else if (seventhgameArray[3] == seventhgameArray[4] && seventhgameArray[3] == seventhgameArray[5] &&
          seventhgameArray[3] == 1 ){
-         document.querySelector('.seventhTacresult').innerHTML = `X wins by the seventh row `
+         document.querySelector('.seventhTacresult').innerHTML = `X wins by the second row `
          seventhTacdone = true;
          TacBlock(7, 1);
          // document.querySelector('.seventhTacresult').style.display = "flex";
      }
          else if (seventhgameArray[3] == seventhgameArray[4] && seventhgameArray[3] == seventhgameArray[5] &&
              seventhgameArray[3] == 2 ){
-             document.querySelector('.seventhTacresult').innerHTML = `O wins by the seventh row `
+             document.querySelector('.seventhTacresult').innerHTML = `O wins by the second row `
              seventhTacdone = true;
              TacBlock(7, 0);
              // document.querySelector('.seventhTacresult').style.display = "flex";
@@ -316,14 +316,14 @@
      //seventh row
     else if (seventhgameArray[6] === seventhgameArray[7] && seventhgameArray[6] === seventhgameArray[8] &&
          seventhgameArray[6] == 1 ){
-         document.querySelector('.seventhTacresult').innerHTML = `X wins by the seventh row `
+         document.querySelector('.seventhTacresult').innerHTML = `X wins by the third row `
          seventhTacdone = true;
          TacBlock(7, 1);
          // document.querySelector('.seventhTacresult').style.display = "flex";
      }
          else if (seventhgameArray[6] === seventhgameArray[7] && seventhgameArray[6] === seventhgameArray[8] &&
              seventhgameArray[6] == 2 ){
-             document.querySelector('.seventhTacresult').innerHTML = `O wins by the seventh row `
+             document.querySelector('.seventhTacresult').innerHTML = `O wins by the third row `
              seventhTacdone = true;
              TacBlock(7, 0);
              // document.querySelector('.seventhTacresult').style.display = "flex";
@@ -350,7 +350,7 @@
      //seventh column
      else if (seventhgameArray[1] == seventhgameArray[4] && seventhgameArray[1] == seventhgameArray[7] &&
          seventhgameArray[1] == 1 ){
-         document.querySelector('.seventhTacresult').innerHTML = `X wins by the seventh column `
+         document.querySelector('.seventhTacresult').innerHTML = `X wins by the second column `
          seventhTacdone = true;
          TacBlock(7, 1);
          // document.querySelector('.seventhTacresult').style.display = "flex";
@@ -358,7 +358,7 @@
          //seventh column
          else if (seventhgameArray[1] == seventhgameArray[4] && seventhgameArray[1] == seventhgameArray[7] &&
              seventhgameArray[1] == 2 ){
-             document.querySelector('.seventhTacresult').innerHTML = `O wins by the seventh column `
+             document.querySelector('.seventhTacresult').innerHTML = `O wins by the second column `
              seventhTacdone = true;
              TacBlock(7, 0);
              // document.querySelector('.seventhTacresult').style.display = "flex";
@@ -367,7 +367,7 @@
      //seventh column
      else if (seventhgameArray[2] == seventhgameArray[5] && seventhgameArray[2] == seventhgameArray[8] &&
          seventhgameArray[2] == 1 ){
-         document.querySelector('.seventhTacresult').innerHTML =  `X wins by the seventh column `
+         document.querySelector('.seventhTacresult').innerHTML =  `X wins by the third column `
          seventhTacdone = true;
          TacBlock(7, 1);
          // document.querySelector('.seventhTacresult').style.display = "flex";
@@ -375,7 +375,7 @@
          //seventh column
          else if (seventhgameArray[2] == seventhgameArray[5] && seventhgameArray[2] == seventhgameArray[8] &&
              seventhgameArray[2] == 2 ){
-             document.querySelector('.seventhTacresult').innerHTML = `O wins by the seventh column `
+             document.querySelector('.seventhTacresult').innerHTML = `O wins by the third column `
              seventhTacdone = true;
              TacBlock(7, 0);
              // document.querySelector('.seventhTacresult').style.display = "flex";

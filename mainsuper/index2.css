@@ -1,6 +1,11 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    --ws: 800px;
+    --hs: 500px;
+}
+body{
+    background: radial-gradient(circle farthest-corner at bottom left, #AC21CF 0%, #4742CF 96%);
 }
 .tac-containers {
     display: flex;
@@ -21,8 +26,8 @@
 .ninthTac
 {
     background-color: blue;
-    width: 800px;
-    height: 500px;
+    width: var(--ws);
+    height: var(--hs);
     z-index: 1;
 
     display: grid;
@@ -98,6 +103,11 @@
     width: 400px;
     height: 35px;
     background-color: chartreuse;
+    border-radius: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Tac-indicator{
@@ -105,24 +115,30 @@
     height: 25px;
     position: absolute;
     bottom: 0px;
+    color: white;
+    font-size: larger;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .Tac-blocker{
-    width: 800px;
-    height: 500px;
+    width: var(--ws);
+    height: var(--hs);
     position: absolute;
     background-color: yellow;
     z-index: 0;/*2 for display*/
     overflow: hidden;
 }
 .Tac-blocker-X{
-    width: 800px;
-    height: 500px;
+    width: var(--ws);
+    height: var(--hs);
     clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
     background-color: black;
 }
 .Tac-blocker-O{
-    width: 800px;
-    height: 500px;
+    width: var(--ws);
+    height: var(--hs);
     clip-path: circle(29.3% at 50% 50%);
     background-color: black;
     /* design its inner later */
@@ -138,8 +154,8 @@
 }
 
 .Tac-blocker-Draw{
-    width: 800px;
-    height: 500px;
+    width: var(--ws);
+    height: var(--hs);
     background-color: black;
     clip-path: polygon(9% 35%, 90% 35%, 90% 65%, 9% 65%);
 
@@ -280,4 +296,116 @@ game preview button is 9
     top: 0px;
     right: 3vw;
     z-index: 9;
+}
+
+@property --ws {
+	syntax: "<length>";
+	initial: 800px;
+	inherits: true;
+}
+
+@property --hs {
+	syntax: "<length>";
+	initial: 500px;
+	inherits: true;
+}
+
+@media only screen and (max-width: 810px) {
+    @property --ws {
+        syntax: "<length>";
+        initial: 400px;
+        inherits: true;
+    }
+    
+    @property --hs {
+        syntax: "<length>";
+        initial: 300px;
+        inherits: true;
+    }
+    
+    *{
+        --ws: 600px;
+        --hs: 420px;
+    }
+
+    .result{
+        background-color: aqua;
+    }
+
+    .firstTac, 
+.secondTac, 
+.thirdTac,
+.fourthTac,
+.fifthTac,
+.sixthTac,
+.seventhTac,
+.eightTac,
+.ninthTac
+{
+    background-color: blue;
+    width: var(--ws);
+    height: var(--hs);
+    z-index: 1;
+
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 140px 140px 140px;
+    place-items: center;
+}
+}
+
+@media only screen and (min-width: 320px) {
+    @property --ws {
+        syntax: "<length>";
+        initial: 400px;
+        inherits: true;
+    }
+    
+    @property --hs {
+        syntax: "<length>";
+        initial: 300px;
+        inherits: true;
+    }
+    
+    *{
+        --ws: 81vw;
+        --hs: 72vh;
+    }
+
+    .result{
+        background-color: orange;
+    }
+
+    .firstTac, 
+.secondTac, 
+.thirdTac,
+.fourthTac,
+.fifthTac,
+.sixthTac,
+.seventhTac,
+.eightTac,
+.ninthTac
+{
+    background-color: blue;
+    width: var(--ws);
+    height: var(--hs);
+    z-index: 1;
+
+    display: grid;
+    grid-template-columns: 27vw 27vw 27vw;
+    grid-template-rows: 24vh 24vh 24vh;
+    place-items: center;
+}
+
+.GamePreviewButton{
+    border-radius: 30px;
+    background-color: blueviolet;
+
+    position: fixed;
+    top: 40px;
+    right: 3vw;
+    z-index: 9;
+    height: 25px;
+    border-style: solid;
+}
 }

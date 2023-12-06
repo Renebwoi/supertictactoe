@@ -5,4 +5,69 @@
 body{
     display: grid;
     place-items: center;
+
+    background: #AC21CF;
+    background: radial-gradient(circle farthest-corner at bottom left, #AC21CF 0%, #4742CF 96%);
+    background-repeat: no-repeat;
+
+    color: white;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 1.3rem;
+}
+main li{
+    margin-bottom: 10px;
+}
+#superImage{
+    width: 80vw;
+    height: 20vh;
+}
+
+
+.animationDiv{
+    display: grid;
+    place-items: center;
+}
+.animationDivInner{
+    width: 50vw;
+    height: 50vh;
+    overflow: hidden;
+    background-image: url(images/SuperTicPicture.png);
+    background-size: cover;
+}
+
+.bodyInfo{
+    width: 80vw;
+}
+
+.Desc{
+    color: deepskyblue;
+    margin-bottom: 30px;
+}
+
+.superGame{
+    position: absolute;
+    left: 3vw;
+    width: 20vw;
+    height: 60px;
+    bottom: -3vw;
+
+    background-color: yellow;
+    border-radius: 40px;
+    text-decoration: none;
+    color: black;
+    padding: 7px;
+}
+.justGame{
+    position: absolute;
+    right: 3vw;
+    width: 20vw;
+    height: 60px;
+    bottom: -3vw;
+
+    background-color: yellow;
+    border-radius: 40px;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
 }

@@ -300,14 +300,14 @@ eightTacdone = false;
      //eight row
     else if (eightgameArray[3] == eightgameArray[4] && eightgameArray[3] == eightgameArray[5] &&
          eightgameArray[3] == 1 ){
-         document.querySelector('.eightTacresult').innerHTML = `X wins by the eight row `
+         document.querySelector('.eightTacresult').innerHTML = `X wins by the second row `
          eightTacdone = true;
          TacBlock(8, 1);
          // document.querySelector('.eightTacresult').style.display = "flex";
      }
          else if (eightgameArray[3] == eightgameArray[4] && eightgameArray[3] == eightgameArray[5] &&
              eightgameArray[3] == 2 ){
-             document.querySelector('.eightTacresult').innerHTML = `O wins by the eight row `
+             document.querySelector('.eightTacresult').innerHTML = `O wins by the second row `
              eightTacdone = true;
              TacBlock(8, 0);
              // document.querySelector('.eightTacresult').style.display = "flex";
@@ -316,14 +316,14 @@ eightTacdone = false;
      //eight row
     else if (eightgameArray[6] === eightgameArray[7] && eightgameArray[6] === eightgameArray[8] &&
          eightgameArray[6] == 1 ){
-         document.querySelector('.eightTacresult').innerHTML = `X wins by the eight row `
+         document.querySelector('.eightTacresult').innerHTML = `X wins by the third row `
          eightTacdone = true;
          TacBlock(8, 1);
          // document.querySelector('.eightTacresult').style.display = "flex";
      }
          else if (eightgameArray[6] === eightgameArray[7] && eightgameArray[6] === eightgameArray[8] &&
              eightgameArray[6] == 2 ){
-             document.querySelector('.eightTacresult').innerHTML = `O wins by the eight row `
+             document.querySelector('.eightTacresult').innerHTML = `O wins by the third row `
              eightTacdone = true;
              TacBlock(8, 0);
              // document.querySelector('.eightTacresult').style.display = "flex";
@@ -350,7 +350,7 @@ eightTacdone = false;
      //eight column
      else if (eightgameArray[1] == eightgameArray[4] && eightgameArray[1] == eightgameArray[7] &&
          eightgameArray[1] == 1 ){
-         document.querySelector('.eightTacresult').innerHTML = `X wins by the eight column `
+         document.querySelector('.eightTacresult').innerHTML = `X wins by the second column `
          eightTacdone = true;
          TacBlock(8, 1);
          // document.querySelector('.eightTacresult').style.display = "flex";
@@ -358,7 +358,7 @@ eightTacdone = false;
          //eight column
          else if (eightgameArray[1] == eightgameArray[4] && eightgameArray[1] == eightgameArray[7] &&
              eightgameArray[1] == 2 ){
-             document.querySelector('.eightTacresult').innerHTML = `O wins by the eight column `
+             document.querySelector('.eightTacresult').innerHTML = `O wins by the second column `
              eightTacdone = true;
              TacBlock(8, 0);
              // document.querySelector('.eightTacresult').style.display = "flex";
@@ -367,7 +367,7 @@ eightTacdone = false;
      //eight column
      else if (eightgameArray[2] == eightgameArray[5] && eightgameArray[2] == eightgameArray[8] &&
          eightgameArray[2] == 1 ){
-         document.querySelector('.eightTacresult').innerHTML =  `X wins by the eight column `
+         document.querySelector('.eightTacresult').innerHTML =  `X wins by the third column `
          eightTacdone = true;
          TacBlock(8, 1);
          // document.querySelector('.eightTacresult').style.display = "flex";
@@ -375,7 +375,7 @@ eightTacdone = false;
          //eight column
          else if (eightgameArray[2] == eightgameArray[5] && eightgameArray[2] == eightgameArray[8] &&
              eightgameArray[2] == 2 ){
-             document.querySelector('.eightTacresult').innerHTML = `O wins by the eight column `
+             document.querySelector('.eightTacresult').innerHTML = `O wins by the third column `
              eightTacdone = true;
              TacBlock(8, 0);
              // document.querySelector('.eightTacresult').style.display = "flex";

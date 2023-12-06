@@ -3,23 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
     <title>Super Tic-tac-toe</title>
 </head>
 <body>
 <main>
     <h1>Introduction</h1>
-    <p>Super Tic-Tac-Toe (also known as ultimate tic-tac-toe) is a better variant of the basic tic-tac-toe game</p>
-    <p>a huge 3 by 3 grid is created which consists of smaller games of tic-tac-toe</p>
-    <p>if a player plays at a certain position in any of the smaller tic-tac-toe boxes, 
-        the opponent has to play in the corresponding tic-tac-toe game. 
-        for example, playing in the second box of any of the smaller boxes will
-         force the opponent to play anywhere in the second game</p>
-    <p>If any of the smaller game is won, that game is given to the player that won it</p>
-    <p> If the corresponding row to be played in is already won or drawn. The opponent is free to play anywhere else</p>
-    <p>The game is won if any player wins 3 games in a row, column or diagonally. It can also be drawn</p>
-    <a href="mainsuper/index2.html"> Click Here to start the game</a>
+    <div class="bodyInfo">
+    <p class="Desc">Super Tic-Tac-Toe (also known as ultimate tic-tac-toe) is a better variant of the basic tic-tac-toe game</p>
+    <!-- <img src="#" title="super tic-tac-toe image" id="superImage" alt="The super tic-tac description" /> -->
+    <p>A huge 3 by 3 grid is created which consists of smaller games of tic-tac-toe</p>
+    <ul>
+        <li>if a player plays at a certain position in any of the smaller tic-tac-toe boxes, 
+            the opponent has to play in the corresponding tic-tac-toe game. 
+            for example, playing in the second box of any of the smaller boxes will
+            force the opponent to play anywhere in the second game</li>
+        <li>If any of the smaller game is won, that game is given to the player that won it</>
+        <li> If the corresponding row to be played in is already won or drawn. The opponent is free to play anywhere else</li>
+        <li>The game is won if any player wins 3 games in a row, column or diagonally. It can also be drawn</li>
+    </ul>
+    </div>
+        <div class="animationDiv">
+            <div class="animationDivInner">
+            <div class="hBar1"></div>
+            <div class="hBar2"></div>
+            <div class="vBar1"></div>
+            <div class="vBar2"></div>
+        </div>
+        </div>
+
+
+    <a href="mainsuper/index2.html" class="superGame"> Click Here to start the game</a>
     <p>Or</p>
-    <a href="BasicTacToe.html"> Click Here to play just the basic tic-tac-toe</a>
+    <a href="BasicTacToe.html" class="justGame"> Click Here to play the basic game</a>
 </main>
 
 </body>
